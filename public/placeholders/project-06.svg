@@ -1,0 +1,10 @@
+<svg width="760" height="460" viewBox="0 0 760 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="460" fill="#F6F7F8"/>
+  <rect x="58" y="54" width="644" height="298" rx="28" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="96" y="92" width="252" height="188" rx="24" fill="#F6F7F8" stroke="#E5E7EB"/>
+  <rect x="412" y="92" width="252" height="188" rx="24" fill="#131314"/>
+  <rect x="128" y="306" width="504" height="22" rx="11" fill="#111111" opacity="0.16"/>
+  <circle cx="222" cy="186" r="30" fill="#FC5632"/>
+  <circle cx="538" cy="186" r="30" fill="#0B6DFF"/>
+  <text x="52" y="402" fill="#111111" font-family="Arial" font-size="24" font-weight="700">Base Inc</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg width="760" height="460" viewBox="0 0 760 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="460" fill="#F6F7F8"/>
+  <rect x="62" y="58" width="636" height="290" rx="28" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="112" y="106" width="536" height="30" rx="15" fill="#111111"/>
+  <rect x="116" y="178" width="124" height="112" rx="20" fill="#0B6DFF"/>
+  <rect x="264" y="178" width="124" height="112" rx="20" fill="#FC5632"/>
+  <rect x="412" y="178" width="124" height="112" rx="20" fill="#0B6DFF"/>
+  <rect x="560" y="178" width="54" height="112" rx="20" fill="#FC5632"/>
+  <text x="52" y="402" fill="#111111" font-family="Arial" font-size="24" font-weight="700">Sequence</text>
+</svg>

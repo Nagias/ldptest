@@ -1,0 +1,11 @@
+<svg width="760" height="460" viewBox="0 0 760 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="460" fill="#F6F7F8"/>
+  <rect x="54" y="52" width="652" height="300" rx="28" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <rect x="92" y="90" width="576" height="66" rx="18" fill="#0B6DFF"/>
+  <rect x="108" y="200" width="552" height="24" rx="12" fill="#111111"/>
+  <rect x="132" y="224" width="18" height="82" rx="9" fill="#111111"/>
+  <rect x="610" y="224" width="18" height="82" rx="9" fill="#111111"/>
+  <rect x="182" y="242" width="102" height="58" rx="18" fill="#FC5632"/>
+  <rect x="474" y="242" width="102" height="58" rx="18" fill="#0B6DFF"/>
+  <text x="52" y="402" fill="#111111" font-family="Arial" font-size="24" font-weight="700">Techcombank HCM</text>
+</svg>
