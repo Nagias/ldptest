@@ -170,6 +170,90 @@ export const commitmentsSection = {
   ]
 };
 
+export const b2bAddonsSection = {
+  layoutSamples: {
+    eyebrow: "MỤC 1",
+    heading: "Layout mẫu theo từng không gian làm việc.",
+    subheading:
+      "HyperWork hỗ trợ dựng layout và phối cảnh 3D cho các khu vực trọng yếu trước khi triển khai thực tế.",
+    items: [
+      {
+        title: "Khu làm việc",
+        body:
+          "Bố trí cụm bàn, ghế công thái học, luồng di chuyển và mật độ chỗ ngồi phù hợp quy mô nhân sự."
+      },
+      {
+        title: "Phòng họp",
+        body:
+          "Đề xuất cấu hình bàn họp, ghế, màn hình, ánh sáng và khoảng cách sử dụng cho nhiều loại meeting."
+      },
+      {
+        title: "Phòng giám đốc",
+        body:
+          "Thiết kế không gian điều hành cân bằng giữa sự riêng tư, tính đại diện và trải nghiệm làm việc."
+      },
+      {
+        title: "Trưởng bộ phận",
+        body:
+          "Tối ưu góc làm việc quản lý, kết nối nhanh với team nhưng vẫn giữ khả năng tập trung."
+      }
+    ]
+  },
+  comboReferences: {
+    eyebrow: "MỤC 2",
+    heading: "Combo tham khảo theo figure 1, figure 2, figure 3.",
+    subheading:
+      "Ba cấu hình sản phẩm mẫu giúp doanh nghiệp ước lượng nhanh ngân sách cho từng cấp độ không gian.",
+    items: [
+      {
+        figure: "1",
+        label: "COMBO 1",
+        title: "Văn phòng cơ bản",
+        description:
+          "Bộ sản phẩm cung cấp giải pháp cơ bản cho một không gian làm việc hiệu quả, năng suất.",
+        image: "/placeholders/combo-01.svg",
+        products: [
+          "Bàn văn phòng HyperWork Core Desk",
+          "Ghế công thái học HyperWork Cloud Chair"
+        ],
+        price: "Chỉ từ 4.169.000"
+      },
+      {
+        figure: "2",
+        label: "COMBO 2",
+        title: "Văn phòng nâng cao",
+        description:
+          "Bộ sản phẩm cung cấp giải pháp nâng cao cho một không gian làm việc đầy tính gắn kết.",
+        image: "/placeholders/combo-02.svg",
+        products: [
+          "Bàn văn phòng HyperWork Core Desk",
+          "Ghế công thái học HyperWork Cloud Chair",
+          "Chuột không dây HyperWork Silentium Mini",
+          "Bàn phím không dây HyperWork SilentKey"
+        ],
+        price: "Chỉ từ 5.099.000"
+      },
+      {
+        figure: "3",
+        label: "COMBO 3",
+        title: "Văn phòng toàn diện",
+        description:
+          "Bộ sản phẩm cung cấp giải pháp toàn diện cho một không gian làm việc kiểu mẫu, tiện nghi, tối ưu, đáp ứng nhiều nhu cầu.",
+        image: "/placeholders/combo-03.svg",
+        products: [
+          "Bàn văn phòng HyperWork Core Desk",
+          "Ghế công thái học HyperWork Cloud Chair",
+          "Chuột không dây HyperWork Silentium Mini",
+          "Bàn phím không dây HyperWork SilentKey",
+          "Giá đỡ màn hình Humanmotion T6 Pro",
+          "Tủ tài liệu thép di động HyperWork Ivy Slim"
+        ],
+        price: "Chỉ từ 8.186.000"
+      }
+    ]
+  }
+};
+
 export const pricingSection = {
   eyebrow: "BẢNG GIÁ B2B",
   heading: "3 tier dành cho 3 quy mô doanh nghiệp.",
