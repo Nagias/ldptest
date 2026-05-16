@@ -3,11 +3,34 @@
 import { useState } from "react";
 import { ArrowUpRight, Boxes, DoorOpen, LayoutGrid, MonitorCog, UsersRound, X } from "lucide-react";
 import { b2bAddonsSection } from "@/data/hyperwork-b2b-data";
-import { AssetImage } from "./AssetImage";
 
 const layoutIcons = [LayoutGrid, UsersRound, DoorOpen, MonitorCog];
 
 type LayoutItem = (typeof b2bAddonsSection.layoutSamples.items)[number];
+
+function publicAssetPath(src: string) {
+  if (!src.startsWith("/")) {
+    return src;
+  }
+
+  if (typeof window !== "undefined" && window.location.pathname.startsWith("/ldptest")) {
+    return `/ldptest${src}`;
+  }
+
+  return src;
+}
+
+function LayoutImage({
+  src,
+  alt,
+  className
+}: {
+  src: string;
+  alt: string;
+  className: string;
+}) {
+  return <img src={publicAssetPath(src)} alt={alt} className={className} loading="eager" />;
+}
 
 export function LayoutStudio() {
   const [selected, setSelected] = useState<LayoutItem | null>(null);
@@ -58,11 +81,9 @@ export function LayoutStudio() {
                   className="fade-up group overflow-hidden rounded-[24px] border border-brand-border bg-white text-left transition-all duration-200 hover:-translate-y-1 hover:shadow-soft"
                 >
                   <div className="relative h-48 overflow-hidden bg-brand-soft">
-                    <AssetImage
+                    <LayoutImage
                       src={item.image}
                       alt={`${item.title} layout thumbnail`}
-                      width={560}
-                      height={360}
                       className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.05]"
                     />
                     <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1.5 text-[11px] font-bold uppercase tracking-[0.12em] text-brand-blue shadow-card backdrop-blur">
@@ -111,12 +132,11 @@ export function LayoutStudio() {
             <div className="grid max-h-[calc(92vh-77px)] gap-0 overflow-y-auto lg:grid-cols-[1.35fr_0.65fr]">
               <div className="bg-brand-soft p-4 md:p-7">
                 {activeDemo ? (
-                  <AssetImage
+                  <LayoutImage
+                    key={activeDemo.image}
                     src={activeDemo.image}
                     alt={activeDemo.caption}
-                    width={1100}
-                    height={720}
-                    className="h-[320px] w-full rounded-[22px] border border-brand-border bg-white object-cover md:h-[560px]"
+                    className="block h-[320px] w-full rounded-[22px] border border-brand-border bg-white object-cover md:h-[560px]"
                   />
                 ) : null}
               </div>
@@ -136,12 +156,10 @@ export function LayoutStudio() {
                           : "border-brand-border hover:border-brand-text"
                       ].join(" ")}
                     >
-                      <AssetImage
+                      <LayoutImage
                         src={demo.image}
                         alt={demo.caption}
-                        width={220}
-                        height={140}
-                        className="h-16 w-24 rounded-xl bg-brand-soft object-cover"
+                        className="block h-16 w-24 rounded-xl bg-brand-soft object-cover"
                       />
                       <span className="text-sm font-bold text-brand-text">{demo.caption}</span>
                     </button>
