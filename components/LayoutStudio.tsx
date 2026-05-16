@@ -13,11 +13,7 @@ function publicAssetPath(src: string) {
     return src;
   }
 
-  if (typeof window !== "undefined" && window.location.pathname.startsWith("/ldptest")) {
-    return `/ldptest${src}`;
-  }
-
-  return src;
+  return `.${src}`;
 }
 
 function LayoutImage({
