@@ -3,6 +3,7 @@ import { FAQSection } from "@/components/FAQSection";
 import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/HeroSection";
 import { LeadFormSection } from "@/components/LeadFormSection";
+import { MobileStickyCTA } from "@/components/MobileStickyCTA";
 import { Navbar } from "@/components/Navbar";
 import { PainPointSection } from "@/components/PainPointSection";
 import { PricingSection } from "@/components/PricingSection";
@@ -28,6 +29,7 @@ export default function Home() {
         <FAQSection />
       </main>
       <Footer />
+      <MobileStickyCTA />
     </>
   );
 }

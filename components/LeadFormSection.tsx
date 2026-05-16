@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle2, ChevronDown } from "lucide-react";
 import { leadFormSection } from "@/data/hyperwork-b2b-data";
 import { Button } from "./Button";
 
@@ -13,9 +13,7 @@ const requiredFields = [
   "phone",
   "email",
   "companySize",
-  "need",
-  "city",
-  "budget"
+  "need"
 ];
 
 function FieldError({ message }: { message?: string }) {
@@ -33,6 +31,7 @@ export function LeadFormSection() {
   const [errors, setErrors] = useState<Errors>({});
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [showOptional, setShowOptional] = useState(false);
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -88,13 +87,23 @@ export function LeadFormSection() {
           <p className="mt-5 max-w-xl text-base leading-8 text-white/70">
             {leadFormSection.description}
           </p>
-          <div className="mt-9 grid gap-3 sm:grid-cols-2">
-            {leadFormSection.trustPoints.map((point) => (
-              <div key={point} className="flex items-center gap-3 text-sm font-semibold text-white">
-                <CheckCircle2 className="h-5 w-5 text-brand-blue" />
-                <span>{point}</span>
-              </div>
-            ))}
+          <div className="mt-9 grid gap-4">
+            <div className="grid gap-3 rounded-[24px] border border-white/10 bg-white/6 p-5 sm:grid-cols-2">
+              {leadFormSection.trustPoints.map((point) => (
+                <div key={point} className="flex items-center gap-3 text-sm font-bold text-white">
+                  <CheckCircle2 className="h-5 w-5 text-brand-blue" />
+                  <span>{point}</span>
+                </div>
+              ))}
+            </div>
+            <div className="grid gap-3 rounded-[24px] border border-white/10 bg-white/6 p-5 sm:grid-cols-2">
+              {leadFormSection.proofPoints.map((point) => (
+                <div key={point} className="flex items-center gap-3 text-sm font-bold text-white">
+                  <CheckCircle2 className="h-5 w-5 text-brand-orange" />
+                  <span>{point}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
@@ -168,7 +177,19 @@ export function LeadFormSection() {
               </select>
               <FieldError message={errors.need} />
             </label>
+          </div>
 
+          <button
+            type="button"
+            onClick={() => setShowOptional((value) => !value)}
+            className="mt-5 flex w-full items-center justify-between rounded-2xl border border-brand-border px-4 py-3 text-left text-sm font-bold text-brand-text transition hover:border-brand-text"
+          >
+            <span>Thêm thông tin để báo giá sát hơn</span>
+            <ChevronDown className={["h-4 w-4 transition", showOptional ? "rotate-180" : ""].join(" ")} />
+          </button>
+
+          {showOptional ? (
+            <div className="mt-4 grid gap-4 md:grid-cols-2">
             <label className="block">
               <span className="mb-2 block text-sm font-semibold text-brand-text">Thành phố</span>
               <input name="city" className={inputClasses(Boolean(errors.city))} />
@@ -199,7 +220,8 @@ export function LeadFormSection() {
                 placeholder="Chia sẻ thêm về mặt bằng, số lượng nhân sự hoặc thời gian triển khai mong muốn."
               />
             </label>
-          </div>
+            </div>
+          ) : null}
 
           <label className="mt-5 flex items-start gap-3">
             <input
@@ -214,7 +236,7 @@ export function LeadFormSection() {
           <FieldError message={errors.consent} />
 
           <Button type="submit" className="mt-7 w-full" showArrow disabled={loading}>
-            {loading ? "Đang gửi..." : "Nhận tư vấn miễn phí"}
+            {loading ? "Đang gửi..." : "Nhận audit miễn phí"}
           </Button>
         </form>
       </div>

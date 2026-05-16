@@ -13,7 +13,7 @@ export const hero = {
   heading: "Nâng Tầm Chuẩn Văn Phòng",
   subheading:
     "Tiên phong kiến tạo không gian làm việc sáng tạo, năng suất và tốt cho sức khỏe",
-  primaryCta: "Nhận tư vấn ngay",
+  primaryCta: "Nhận audit văn phòng miễn phí",
   secondaryCta: "Xem demo không gian",
   image:
     "https://images.pexels.com/photos/12703092/pexels-photo-12703092.jpeg?auto=compress&cs=tinysrgb&w=1400",
@@ -32,23 +32,53 @@ export const painPointSection = {
   heading: "Không gian văn phòng truyền thống đang làm giảm sức cạnh tranh.",
   subheading:
     "Một văn phòng chỉ “đủ dùng” không còn đủ để giữ chân nhân sự, nâng hiệu suất và xây dựng thương hiệu tuyển dụng.",
-  cta: "Tôi muốn văn phòng sáng tạo",
+  cta: "Gửi mặt bằng để nhận layout sơ bộ",
   items: [
     {
       icon: "activity",
       title: "Giảm hiệu suất công việc",
+      metric: "-18%",
+      metricLabel: "khả năng tập trung",
+      signal: "Áp lực vô hình + đau mỏi kéo dài",
+      outcome: "Sáng tạo giảm, hiệu suất giảm",
+      highlightSegments: [
+        "Áp lực vô hình",
+        "đau mỏi kéo dài",
+        "khả năng sáng tạo",
+        "hiệu suất công việc"
+      ],
       body:
         "Môi trường công sở luôn tạo áp lực vô hình tới nhân sự. Đồng thời, với bàn ghế chưa phù hợp, họ sẽ luôn trong tình trạng đau mỏi lưng, cổ, vai, gáy. Từ đó giảm khả năng sáng tạo, cảm giác “thuộc về” và hiệu suất công việc, khó thu hút nhân sự trẻ, tài năng."
     },
     {
       icon: "briefcase",
       title: "Khó xây dựng thương hiệu tuyển dụng",
+      metric: "2x",
+      metricLabel: "áp lực cạnh tranh tuyển dụng",
+      signal: "Ứng viên ưu tiên môi trường hiện đại",
+      outcome: "Văn phòng cũ làm giảm sức hút",
+      highlightSegments: [
+        "môi trường làm việc thoải mái",
+        "hiện đại",
+        "truyền cảm hứng",
+        "lợi thế cạnh tranh"
+      ],
       body:
         "Ứng viên ngày càng chú trọng đến môi trường làm việc thoải mái, hiện đại và truyền cảm hứng. Vì thế, một văn phòng chuẩn công sở sẽ dễ mất lợi thế cạnh tranh trên thị trường tuyển dụng."
     },
     {
       icon: "users",
       title: "Hạn chế sự gắn kết & tinh thần của nhân viên",
+      metric: "+32%",
+      metricLabel: "rủi ro nghỉ việc",
+      signal: "Ít tương tác, thiếu không gian cộng tác",
+      outcome: "Tinh thần nội bộ yếu dần",
+      highlightSegments: [
+        "Tương tác",
+        "tinh thần nội bộ yếu",
+        "thiếu cảm giác “thuộc về”",
+        "tăng tỷ lệ nghỉ việc"
+      ],
       body:
         "Tương tác, trò chuyện giữa các nhân viên giảm. Điều này dẫn đến tinh thần nội bộ yếu, nhân viên thiếu cảm giác “thuộc về”, tăng tỷ lệ nghỉ việc."
     }
@@ -63,18 +93,24 @@ export const trendsSection = {
   items: [
     {
       title: "Resimercial Office",
+      image:
+        "https://images.pexels.com/photos/1957477/pexels-photo-1957477.jpeg?auto=compress&cs=tinysrgb&w=900",
       body:
         "Làm mờ ranh giới giữa môi trường làm việc và môi trường ở nhà, tạo cảm giác thoải mái cho nhân sự.",
       outcome: "Comfortable & welcoming"
     },
     {
       title: "Human-Centered Design",
+      image:
+        "https://images.pexels.com/photos/28706299/pexels-photo-28706299.jpeg?auto=compress&cs=tinysrgb&w=900",
       body:
         "Nâng cấp góc làm việc công thái học, đảm bảo sức khỏe, nâng cao trải nghiệm và gia tăng hiệu suất làm việc.",
       outcome: "Ergonomic & productive"
     },
     {
       title: "Minimalism & Modern Style",
+      image:
+        "https://images.pexels.com/photos/7534208/pexels-photo-7534208.jpeg?auto=compress&cs=tinysrgb&w=900",
       body:
         "Sử dụng tông màu trung tính, nội thất đơn giản, gọn gàng, tạo nên ấn tượng chuyên nghiệp trong mắt đối tác.",
       outcome: "Clean & professional"
@@ -87,7 +123,7 @@ export const solutionsSection = {
   heading: "Danh mục giải pháp cho từng nhu cầu doanh nghiệp",
   subheading:
     "Từ thiết kế mới đến nâng cấp văn phòng và quà tặng doanh nghiệp, HyperWork đồng hành xuyên suốt từ tư vấn đến triển khai.",
-  cta: "Nhận tư vấn giải pháp",
+  cta: "Nhận đề xuất giải pháp trong 24h",
   items: [
     {
       title: "Thiết kế mới",
@@ -179,21 +215,53 @@ export const b2bAddonsSection = {
     items: [
       {
         title: "Khu làm việc",
+        tag: "Open workspace",
+        image: "/placeholders/layout-workspace.svg",
+        demos: [
+          { image: "/placeholders/layout-workspace.svg", caption: "Cụm bàn 4 người" },
+          { image: "/placeholders/layout-detail-01.svg", caption: "Cụm team 8 người" },
+          { image: "/placeholders/layout-detail-02.svg", caption: "Focus pod + collaboration" },
+          { image: "/placeholders/layout-detail-03.svg", caption: "Open workspace theo trục" }
+        ],
         body:
           "Bố trí cụm bàn, ghế công thái học, luồng di chuyển và mật độ chỗ ngồi phù hợp quy mô nhân sự."
       },
       {
         title: "Phòng họp",
+        tag: "Meeting room",
+        image: "/placeholders/layout-meeting.svg",
+        demos: [
+          { image: "/placeholders/layout-meeting.svg", caption: "Phòng họp 10 người" },
+          { image: "/placeholders/layout-detail-04.svg", caption: "Boardroom executive" },
+          { image: "/placeholders/layout-detail-05.svg", caption: "Meeting + presentation" },
+          { image: "/placeholders/layout-detail-06.svg", caption: "Workshop room" }
+        ],
         body:
           "Đề xuất cấu hình bàn họp, ghế, màn hình, ánh sáng và khoảng cách sử dụng cho nhiều loại meeting."
       },
       {
         title: "Phòng giám đốc",
+        tag: "Executive office",
+        image: "/placeholders/layout-executive.svg",
+        demos: [
+          { image: "/placeholders/layout-executive.svg", caption: "Executive desk" },
+          { image: "/placeholders/layout-detail-04.svg", caption: "Private meeting" },
+          { image: "/placeholders/layout-detail-07.svg", caption: "Lounge tiếp khách" },
+          { image: "/placeholders/layout-detail-05.svg", caption: "Điều hành + trình chiếu" }
+        ],
         body:
           "Thiết kế không gian điều hành cân bằng giữa sự riêng tư, tính đại diện và trải nghiệm làm việc."
       },
       {
         title: "Trưởng bộ phận",
+        tag: "Manager pod",
+        image: "/placeholders/layout-manager.svg",
+        demos: [
+          { image: "/placeholders/layout-manager.svg", caption: "Manager pod" },
+          { image: "/placeholders/layout-detail-02.svg", caption: "Lead + team cluster" },
+          { image: "/placeholders/layout-detail-08.svg", caption: "Focus corner" },
+          { image: "/placeholders/layout-detail-03.svg", caption: "Pod theo trục giao tiếp" }
+        ],
         body:
           "Tối ưu góc làm việc quản lý, kết nối nhanh với team nhưng vẫn giữ khả năng tập trung."
       }
@@ -201,9 +269,9 @@ export const b2bAddonsSection = {
   },
   comboReferences: {
     eyebrow: "MỤC 2",
-    heading: "Combo tham khảo theo figure 1, figure 2, figure 3.",
+    heading: "Các Combo cơ bản",
     subheading:
-      "Ba cấu hình sản phẩm mẫu giúp doanh nghiệp ước lượng nhanh ngân sách cho từng cấp độ không gian.",
+      "Ba cấu hình sản phẩm mẫu giúp doanh nghiệp ước lượng nhanh ngân sách cho từng cấp độ không gian. Để tự chọn Combo mình mong muốn, vui lòng liên hệ Zalo: https://zalo.me/19006868",
     items: [
       {
         figure: "1",
@@ -211,7 +279,8 @@ export const b2bAddonsSection = {
         title: "Văn phòng cơ bản",
         description:
           "Bộ sản phẩm cung cấp giải pháp cơ bản cho một không gian làm việc hiệu quả, năng suất.",
-        image: "/placeholders/combo-01.svg",
+        image:
+          "https://images.pexels.com/photos/31236089/pexels-photo-31236089.jpeg?auto=compress&cs=tinysrgb&w=1200",
         products: [
           "Bàn văn phòng HyperWork Core Desk",
           "Ghế công thái học HyperWork Cloud Chair"
@@ -224,7 +293,8 @@ export const b2bAddonsSection = {
         title: "Văn phòng nâng cao",
         description:
           "Bộ sản phẩm cung cấp giải pháp nâng cao cho một không gian làm việc đầy tính gắn kết.",
-        image: "/placeholders/combo-02.svg",
+        image:
+          "https://images.pexels.com/photos/31726663/pexels-photo-31726663.jpeg?auto=compress&cs=tinysrgb&w=1200",
         products: [
           "Bàn văn phòng HyperWork Core Desk",
           "Ghế công thái học HyperWork Cloud Chair",
@@ -239,7 +309,8 @@ export const b2bAddonsSection = {
         title: "Văn phòng toàn diện",
         description:
           "Bộ sản phẩm cung cấp giải pháp toàn diện cho một không gian làm việc kiểu mẫu, tiện nghi, tối ưu, đáp ứng nhiều nhu cầu.",
-        image: "/placeholders/combo-03.svg",
+        image:
+          "https://images.pexels.com/photos/13722865/pexels-photo-13722865.jpeg?auto=compress&cs=tinysrgb&w=1200",
         products: [
           "Bàn văn phòng HyperWork Core Desk",
           "Ghế công thái học HyperWork Cloud Chair",
@@ -262,10 +333,11 @@ export const pricingSection = {
   tiers: [
     {
       title: "STANDARD",
+      fit: "Setup nhanh cho team nhỏ",
       price: "-8% đến -15%",
       subtitle: "20–99 sản phẩm",
       description: "Phù hợp cho: Văn phòng nhỏ, studio, co-working",
-      cta: "Yêu cầu báo giá",
+      cta: "Nhận báo giá trong 2 ngày",
       features: [
         "Tư vấn online qua Zoom",
         "Lắp đặt tại HCM/Hà Nội",
@@ -276,10 +348,11 @@ export const pricingSection = {
     },
     {
       title: "PREMIUM",
+      fit: "Lựa chọn cân bằng cho doanh nghiệp đang scale",
       price: "-18% đến -22%",
       subtitle: "100–499 sản phẩm",
       description: "Phù hợp cho: Khách sạn, tập đoàn vừa, chuỗi văn phòng",
-      cta: "Yêu cầu báo giá",
+      cta: "Nhận báo giá trong 2 ngày",
       badge: "PHỔ BIẾN NHẤT",
       featured: true,
       features: [
@@ -294,10 +367,11 @@ export const pricingSection = {
     },
     {
       title: "ENTERPRISE",
+      fit: "Triển khai nhiều tầng / nhiều chi nhánh",
       price: "Báo giá riêng",
       subtitle: "500+ sản phẩm",
       description: "Phù hợp cho: Tập đoàn lớn, dự án văn phòng quy mô",
-      cta: "Liên hệ riêng",
+      cta: "Đặt lịch tư vấn riêng",
       features: [
         "Workspace design dedicated team",
         "Lắp đặt theo phase, có PM riêng",
@@ -362,6 +436,7 @@ export const projectsSection = {
       productValue: "HyperOne, Luna, Ergo Chair",
       scaleLabel: "QUY MÔ",
       scaleValue: "280 bàn",
+      outcome: "Hoàn tất 2 tower trong 9 ngày, không gián đoạn vận hành",
       image:
         "https://images.pexels.com/photos/12703092/pexels-photo-12703092.jpeg?auto=compress&cs=tinysrgb&w=900"
     },
@@ -374,6 +449,7 @@ export const projectsSection = {
       productValue: "Mopi, Luna, Stand Pro",
       scaleLabel: "QUY MÔ",
       scaleValue: "520 bàn",
+      outcome: "Triển khai cross-floor theo phase với PM riêng",
       image:
         "https://images.pexels.com/photos/31709104/pexels-photo-31709104.jpeg?auto=compress&cs=tinysrgb&w=900"
     },
@@ -386,6 +462,7 @@ export const projectsSection = {
       productValue: "Toàn bộ HyperWork ecosystem",
       scaleLabel: "QUY MÔ",
       scaleValue: "120 bàn",
+      outcome: "Full ergonomic kit, nghiệm thu trong 7 ngày",
       image:
         "https://images.pexels.com/photos/28706299/pexels-photo-28706299.jpeg?auto=compress&cs=tinysrgb&w=900"
     },
@@ -398,6 +475,7 @@ export const projectsSection = {
       productValue: "HyperOne, Ergo Chair (custom logo)",
       scaleLabel: "QUY MÔ",
       scaleValue: "500 bàn",
+      outcome: "Custom logo, bàn giao 3 sàn theo lịch vận hành",
       image:
         "https://images.pexels.com/photos/32800582/pexels-photo-32800582.jpeg?auto=compress&cs=tinysrgb&w=900"
     },
@@ -410,6 +488,7 @@ export const projectsSection = {
       productValue: "Mopi, Luna, Stand Pro",
       scaleLabel: "QUY MÔ",
       scaleValue: "180 bàn",
+      outcome: "Tối ưu booth + meeting hub tại Quận 1",
       image:
         "https://images.pexels.com/photos/29397977/pexels-photo-29397977.jpeg?auto=compress&cs=tinysrgb&w=900"
     },
@@ -422,6 +501,7 @@ export const projectsSection = {
       productValue: "HyperOne, Luna, Ergo Chair",
       scaleLabel: "QUY MÔ",
       scaleValue: "90 bàn",
+      outcome: "Setup văn phòng mới với layout linh hoạt cho team growth",
       image:
         "https://images.pexels.com/photos/1957477/pexels-photo-1957477.jpeg?auto=compress&cs=tinysrgb&w=900"
     }
@@ -430,9 +510,9 @@ export const projectsSection = {
 
 export const leadFormSection = {
   eyebrow: "LIÊN HỆ",
-  heading: "Nhận tư vấn miễn phí cho không gian làm việc của bạn",
+  heading: "Nhận audit văn phòng miễn phí cho không gian làm việc của bạn",
   description:
-    "Để lại thông tin, đội ngũ HyperWork sẽ liên hệ trong vòng 24 giờ để khảo sát nhu cầu và đề xuất giải pháp phù hợp.",
+    "Để lại thông tin cơ bản, đội ngũ HyperWork sẽ liên hệ trong vòng 24 giờ để khảo sát nhu cầu và đề xuất layout sơ bộ phù hợp.",
   trustPoints: [
     "Tư vấn miễn phí",
     "Phản hồi trong 24h",
@@ -447,7 +527,22 @@ export const leadFormSection = {
     "300–500 triệu",
     "500 triệu+",
     "Chưa xác định"
+  ],
+  proofPoints: [
+    "200+ doanh nghiệp",
+    "VAT / công nợ / MOU",
+    "Bảo hành đến 60 tháng",
+    "Account manager riêng"
   ]
+};
+
+export const conversionCta = {
+  stickyPrimary: "Nhận audit miễn phí",
+  stickySecondary: "Gọi 1900 6868",
+  faqHeading: "Cần tư vấn theo mặt bằng thực tế?",
+  faqDescription:
+    "Gửi thông tin để nhận đề xuất sơ bộ trong 24h, gồm nhu cầu, quy mô và gợi ý combo phù hợp.",
+  faqCta: "Nhận đề xuất sơ bộ"
 };
 
 export const faqSection = {

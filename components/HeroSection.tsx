@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { CheckCircle2, Play } from "lucide-react";
 import { hero } from "@/data/hyperwork-b2b-data";
+import { AssetImage } from "./AssetImage";
 import { Button } from "./Button";
 
 export function HeroSection() {
@@ -39,7 +39,7 @@ export function HeroSection() {
 
         <div className="fade-up fade-up-delay-2 relative">
           <div className="relative overflow-hidden rounded-[28px] border border-brand-border bg-brand-soft shadow-soft">
-            <Image
+            <AssetImage
               src={hero.image}
               alt="Không gian bàn ghế văn phòng hiện đại"
               width={820}
@@ -51,7 +51,7 @@ export function HeroSection() {
 
           <div className="absolute -bottom-8 left-5 right-5 rounded-[24px] border border-white/70 bg-white/90 p-3 shadow-soft backdrop-blur md:-left-10 md:right-auto md:w-[330px]">
             <div className="relative overflow-hidden rounded-[18px] bg-brand-soft">
-              <Image
+              <AssetImage
                 src={hero.videoPoster}
                 alt="Video preview demo không gian làm việc"
                 width={620}
