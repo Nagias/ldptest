@@ -59,6 +59,14 @@ export function PricingSection() {
               )}
 
               <h3 className="text-sm font-bold uppercase tracking-[0.24em]">{tier.title}</h3>
+              <div
+                className={[
+                  "mt-5 rounded-2xl px-4 py-3 text-sm font-bold",
+                  tier.featured ? "bg-white/10 text-white" : "bg-brand-blue/10 text-brand-blue"
+                ].join(" ")}
+              >
+                {tier.fit}
+              </div>
               <p className="mt-5 text-4xl font-bold tracking-tight md:text-5xl">{tier.price}</p>
               <p className={["mt-3 text-sm font-semibold", tier.featured ? "text-white/75" : "text-brand-muted"].join(" ")}>
                 {tier.subtitle}

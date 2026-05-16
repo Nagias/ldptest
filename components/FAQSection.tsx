@@ -2,7 +2,8 @@
 
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
-import { faqSection } from "@/data/hyperwork-b2b-data";
+import { conversionCta, faqSection } from "@/data/hyperwork-b2b-data";
+import { Button } from "./Button";
 import { SectionHeading } from "./SectionHeading";
 
 function FAQItem({
@@ -67,6 +68,16 @@ export function FAQSection() {
               onToggle={() => setOpenIndex(openIndex === index ? -1 : index)}
             />
           ))}
+        </div>
+
+        <div className="mx-auto mt-10 max-w-3xl rounded-[28px] bg-brand-text p-7 text-center text-white md:p-10">
+          <h3 className="text-2xl font-bold tracking-tight">{conversionCta.faqHeading}</h3>
+          <p className="mx-auto mt-3 max-w-xl text-sm leading-7 text-white/65">
+            {conversionCta.faqDescription}
+          </p>
+          <Button href="#contact" className="mt-6" showArrow>
+            {conversionCta.faqCta}
+          </Button>
         </div>
       </div>
     </section>

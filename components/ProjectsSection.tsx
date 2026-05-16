@@ -19,7 +19,7 @@ export function ProjectsSection() {
             href="#contact"
             className="inline-flex items-center gap-2 text-sm font-bold text-brand-blue transition-colors hover:text-brand-blueDark"
           >
-            {projectsSection.link}
+            Nhận case study phù hợp ngành của bạn
             <ArrowUpRight className="h-4 w-4" />
           </a>
         </div>
@@ -69,6 +69,14 @@ export function ProjectsSection() {
                       {project.scaleValue}
                     </p>
                   </div>
+                </div>
+                <div className="mt-5 rounded-2xl bg-brand-blue/10 p-4">
+                  <p className="text-[10px] font-bold tracking-[0.22em] text-brand-blue">
+                    OUTCOME
+                  </p>
+                  <p className="mt-2 text-sm font-semibold leading-6 text-brand-text">
+                    {project.outcome}
+                  </p>
                 </div>
               </div>
             </article>

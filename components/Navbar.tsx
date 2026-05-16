@@ -32,7 +32,7 @@ export function Navbar() {
 
         <div className="hidden lg:block">
           <Button href="#contact" variant="primary">
-            Nhận tư vấn
+            Nhận audit miễn phí
           </Button>
         </div>
 
@@ -60,7 +60,7 @@ export function Navbar() {
               </a>
             ))}
             <Button href="#contact" className="mt-2 w-full" onClick={() => setOpen(false)}>
-              Nhận tư vấn
+              Nhận audit miễn phí
             </Button>
           </div>
         </div>

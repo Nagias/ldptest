@@ -13,7 +13,7 @@ export const hero = {
   heading: "Nâng Tầm Chuẩn Văn Phòng",
   subheading:
     "Tiên phong kiến tạo không gian làm việc sáng tạo, năng suất và tốt cho sức khỏe",
-  primaryCta: "Nhận tư vấn ngay",
+  primaryCta: "Nhận audit văn phòng miễn phí",
   secondaryCta: "Xem demo không gian",
   image:
     "https://images.pexels.com/photos/12703092/pexels-photo-12703092.jpeg?auto=compress&cs=tinysrgb&w=1400",
@@ -32,7 +32,7 @@ export const painPointSection = {
   heading: "Không gian văn phòng truyền thống đang làm giảm sức cạnh tranh.",
   subheading:
     "Một văn phòng chỉ “đủ dùng” không còn đủ để giữ chân nhân sự, nâng hiệu suất và xây dựng thương hiệu tuyển dụng.",
-  cta: "Tôi muốn văn phòng sáng tạo",
+  cta: "Gửi mặt bằng để nhận layout sơ bộ",
   items: [
     {
       icon: "activity",
@@ -93,18 +93,24 @@ export const trendsSection = {
   items: [
     {
       title: "Resimercial Office",
+      image:
+        "https://images.pexels.com/photos/1957477/pexels-photo-1957477.jpeg?auto=compress&cs=tinysrgb&w=900",
       body:
         "Làm mờ ranh giới giữa môi trường làm việc và môi trường ở nhà, tạo cảm giác thoải mái cho nhân sự.",
       outcome: "Comfortable & welcoming"
     },
     {
       title: "Human-Centered Design",
+      image:
+        "https://images.pexels.com/photos/28706299/pexels-photo-28706299.jpeg?auto=compress&cs=tinysrgb&w=900",
       body:
         "Nâng cấp góc làm việc công thái học, đảm bảo sức khỏe, nâng cao trải nghiệm và gia tăng hiệu suất làm việc.",
       outcome: "Ergonomic & productive"
     },
     {
       title: "Minimalism & Modern Style",
+      image:
+        "https://images.pexels.com/photos/7534208/pexels-photo-7534208.jpeg?auto=compress&cs=tinysrgb&w=900",
       body:
         "Sử dụng tông màu trung tính, nội thất đơn giản, gọn gàng, tạo nên ấn tượng chuyên nghiệp trong mắt đối tác.",
       outcome: "Clean & professional"
@@ -117,7 +123,7 @@ export const solutionsSection = {
   heading: "Danh mục giải pháp cho từng nhu cầu doanh nghiệp",
   subheading:
     "Từ thiết kế mới đến nâng cấp văn phòng và quà tặng doanh nghiệp, HyperWork đồng hành xuyên suốt từ tư vấn đến triển khai.",
-  cta: "Nhận tư vấn giải pháp",
+  cta: "Nhận đề xuất giải pháp trong 24h",
   items: [
     {
       title: "Thiết kế mới",
@@ -327,10 +333,11 @@ export const pricingSection = {
   tiers: [
     {
       title: "STANDARD",
+      fit: "Setup nhanh cho team nhỏ",
       price: "-8% đến -15%",
       subtitle: "20–99 sản phẩm",
       description: "Phù hợp cho: Văn phòng nhỏ, studio, co-working",
-      cta: "Yêu cầu báo giá",
+      cta: "Nhận báo giá trong 2 ngày",
       features: [
         "Tư vấn online qua Zoom",
         "Lắp đặt tại HCM/Hà Nội",
@@ -341,10 +348,11 @@ export const pricingSection = {
     },
     {
       title: "PREMIUM",
+      fit: "Lựa chọn cân bằng cho doanh nghiệp đang scale",
       price: "-18% đến -22%",
       subtitle: "100–499 sản phẩm",
       description: "Phù hợp cho: Khách sạn, tập đoàn vừa, chuỗi văn phòng",
-      cta: "Yêu cầu báo giá",
+      cta: "Nhận báo giá trong 2 ngày",
       badge: "PHỔ BIẾN NHẤT",
       featured: true,
       features: [
@@ -359,10 +367,11 @@ export const pricingSection = {
     },
     {
       title: "ENTERPRISE",
+      fit: "Triển khai nhiều tầng / nhiều chi nhánh",
       price: "Báo giá riêng",
       subtitle: "500+ sản phẩm",
       description: "Phù hợp cho: Tập đoàn lớn, dự án văn phòng quy mô",
-      cta: "Liên hệ riêng",
+      cta: "Đặt lịch tư vấn riêng",
       features: [
         "Workspace design dedicated team",
         "Lắp đặt theo phase, có PM riêng",
@@ -427,6 +436,7 @@ export const projectsSection = {
       productValue: "HyperOne, Luna, Ergo Chair",
       scaleLabel: "QUY MÔ",
       scaleValue: "280 bàn",
+      outcome: "Hoàn tất 2 tower trong 9 ngày, không gián đoạn vận hành",
       image:
         "https://images.pexels.com/photos/12703092/pexels-photo-12703092.jpeg?auto=compress&cs=tinysrgb&w=900"
     },
@@ -439,6 +449,7 @@ export const projectsSection = {
       productValue: "Mopi, Luna, Stand Pro",
       scaleLabel: "QUY MÔ",
       scaleValue: "520 bàn",
+      outcome: "Triển khai cross-floor theo phase với PM riêng",
       image:
         "https://images.pexels.com/photos/31709104/pexels-photo-31709104.jpeg?auto=compress&cs=tinysrgb&w=900"
     },
@@ -451,6 +462,7 @@ export const projectsSection = {
       productValue: "Toàn bộ HyperWork ecosystem",
       scaleLabel: "QUY MÔ",
       scaleValue: "120 bàn",
+      outcome: "Full ergonomic kit, nghiệm thu trong 7 ngày",
       image:
         "https://images.pexels.com/photos/28706299/pexels-photo-28706299.jpeg?auto=compress&cs=tinysrgb&w=900"
     },
@@ -463,6 +475,7 @@ export const projectsSection = {
       productValue: "HyperOne, Ergo Chair (custom logo)",
       scaleLabel: "QUY MÔ",
       scaleValue: "500 bàn",
+      outcome: "Custom logo, bàn giao 3 sàn theo lịch vận hành",
       image:
         "https://images.pexels.com/photos/32800582/pexels-photo-32800582.jpeg?auto=compress&cs=tinysrgb&w=900"
     },
@@ -475,6 +488,7 @@ export const projectsSection = {
       productValue: "Mopi, Luna, Stand Pro",
       scaleLabel: "QUY MÔ",
       scaleValue: "180 bàn",
+      outcome: "Tối ưu booth + meeting hub tại Quận 1",
       image:
         "https://images.pexels.com/photos/29397977/pexels-photo-29397977.jpeg?auto=compress&cs=tinysrgb&w=900"
     },
@@ -487,6 +501,7 @@ export const projectsSection = {
       productValue: "HyperOne, Luna, Ergo Chair",
       scaleLabel: "QUY MÔ",
       scaleValue: "90 bàn",
+      outcome: "Setup văn phòng mới với layout linh hoạt cho team growth",
       image:
         "https://images.pexels.com/photos/1957477/pexels-photo-1957477.jpeg?auto=compress&cs=tinysrgb&w=900"
     }
@@ -495,9 +510,9 @@ export const projectsSection = {
 
 export const leadFormSection = {
   eyebrow: "LIÊN HỆ",
-  heading: "Nhận tư vấn miễn phí cho không gian làm việc của bạn",
+  heading: "Nhận audit văn phòng miễn phí cho không gian làm việc của bạn",
   description:
-    "Để lại thông tin, đội ngũ HyperWork sẽ liên hệ trong vòng 24 giờ để khảo sát nhu cầu và đề xuất giải pháp phù hợp.",
+    "Để lại thông tin cơ bản, đội ngũ HyperWork sẽ liên hệ trong vòng 24 giờ để khảo sát nhu cầu và đề xuất layout sơ bộ phù hợp.",
   trustPoints: [
     "Tư vấn miễn phí",
     "Phản hồi trong 24h",
@@ -512,7 +527,22 @@ export const leadFormSection = {
     "300–500 triệu",
     "500 triệu+",
     "Chưa xác định"
+  ],
+  proofPoints: [
+    "200+ doanh nghiệp",
+    "VAT / công nợ / MOU",
+    "Bảo hành đến 60 tháng",
+    "Account manager riêng"
   ]
+};
+
+export const conversionCta = {
+  stickyPrimary: "Nhận audit miễn phí",
+  stickySecondary: "Gọi 1900 6868",
+  faqHeading: "Cần tư vấn theo mặt bằng thực tế?",
+  faqDescription:
+    "Gửi thông tin để nhận đề xuất sơ bộ trong 24h, gồm nhu cầu, quy mô và gợi ý combo phù hợp.",
+  faqCta: "Nhận đề xuất sơ bộ"
 };
 
 export const faqSection = {
