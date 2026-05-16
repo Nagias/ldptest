@@ -179,21 +179,29 @@ export const b2bAddonsSection = {
     items: [
       {
         title: "Khu làm việc",
+        tag: "Open workspace",
+        image: "/placeholders/layout-workspace.svg",
         body:
           "Bố trí cụm bàn, ghế công thái học, luồng di chuyển và mật độ chỗ ngồi phù hợp quy mô nhân sự."
       },
       {
         title: "Phòng họp",
+        tag: "Meeting room",
+        image: "/placeholders/layout-meeting.svg",
         body:
           "Đề xuất cấu hình bàn họp, ghế, màn hình, ánh sáng và khoảng cách sử dụng cho nhiều loại meeting."
       },
       {
         title: "Phòng giám đốc",
+        tag: "Executive office",
+        image: "/placeholders/layout-executive.svg",
         body:
           "Thiết kế không gian điều hành cân bằng giữa sự riêng tư, tính đại diện và trải nghiệm làm việc."
       },
       {
         title: "Trưởng bộ phận",
+        tag: "Manager pod",
+        image: "/placeholders/layout-manager.svg",
         body:
           "Tối ưu góc làm việc quản lý, kết nối nhanh với team nhưng vẫn giữ khả năng tập trung."
       }

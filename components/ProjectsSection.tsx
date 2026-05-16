@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { projectsSection } from "@/data/hyperwork-b2b-data";
+import { AssetImage } from "./AssetImage";
 import { SectionHeading } from "./SectionHeading";
 
 export function ProjectsSection() {
@@ -30,7 +30,7 @@ export function ProjectsSection() {
               key={project.name}
               className="fade-up overflow-hidden rounded-[24px] border border-brand-border bg-white transition-all duration-200 hover:-translate-y-1 hover:shadow-card"
             >
-              <Image
+              <AssetImage
                 src={project.image}
                 alt={`${project.name} workspace project`}
                 width={760}
